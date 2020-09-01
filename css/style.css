@@ -1,15 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Revalia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Poppins:wght@300&display=swap');
 
 html, body{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-family: 'Revalia', cursive;
+  font-family: 'Mukta', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+}
+.bg { 
+  /* The image used */
+  background-image: url(/img/backfondo2.png);
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 body h1{
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
-@media screen and (min-width: 574px){
-  footer{
-    position: absolute;
-    bottom: 0;
-  }
+footer{
+  font-family: 'Poppins', sans-serif;
 }
