@@ -3,21 +3,9 @@
 html, body{
   font-family: 'Mukta', sans-serif;
   font-family: 'Poppins', sans-serif;
-  height: 100%;
+  height: auto;
 }
-.bg { 
-  /* The image used */
-  background-color: #f8f6f8;
 
-  /* Full height */
-  height: 90%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-}
 body h1{
   font-family: 'Poppins', sans-serif;
 }
