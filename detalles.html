@@ -13,6 +13,10 @@
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
+  <!-- MDBootstrap Masonry  -->
+  <script type="text/javascript" src="js/addons/masonry.pkgd.min.js"></script>
+
+  <script type="text/javascript" src="js/addons/imagesloaded.pkgd.min.js"></script>
   <style>
 
 
@@ -21,7 +25,7 @@
 </head>
 
 <body>
-  <div class="bg">
+  
 
   <!--Main Navigation-->
   <header>
@@ -29,26 +33,38 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
       <div class="container">
-        
+
         <!-- Brand -->
-        <a class="navbar-brand waves-effect" href="/" >
+        <a class="navbar-brand waves-effect" href="/">
           <img src="/img/LogoDetallesIris.png" alt="Logo Detalles Iris" class="img-fluid" width="200">
         </a>
-         <!-- Collapse button -->
-  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
-  aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
-  <div class="animated-icon1"><span></span><span></span><span></span></div>
-</button>
 
         <!-- Collapse -->
-       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+         aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
 
         <!-- Links -->
-        <div id="navbarSupportedContent">
+        <div  class="collapse navbar-collapse" id="basicExampleNav"">
 
           <!-- Left -->
           <ul class="navbar-nav mr-auto">
-            
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/detalles.html">Detalles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/papeleria.html">Papeleria</a>
+            </li>
+      
           </ul>
 
           <!-- Right -->
@@ -71,13 +87,12 @@
       </div>
     </nav>
     <!-- Navbar -->
-
   </header>
   <!--Main Navigation-->
-<hr>
+<hr class="py-3">
 
 
-<div class="container py-5">
+
   <!--Carousel Wrapper-->
 <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
   <!--Indicators-->
@@ -117,12 +132,76 @@
   </a>
   <!--/.Controls-->
 </div>
-<!--/.Carousel Wrapper-->
+
+
+  <div class="container p-2">
+    <h1 class="h1-responsive text-center">Descubre nuestras categorias</h1>
+      <div class="row px-3">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+              aria-selected="true">Anchetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+              aria-selected="false">Tazas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+              aria-selected="false">Alcancias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact"
+              aria-selected="false">Destacados</a>
+          </li>
+         
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+            <div class="card-group">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Panel title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Panel title</h5>
+                  <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Panel title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Food truck fixie
+            locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
+            blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee.
+            Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum
+            PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS
+            salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+            sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+            stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Etsy mixtape
+            wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack
+            lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard
+            locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify
+            squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie
+            etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog
+            stumptown. Pitchfork sustainable tofu synth chambray yr.</div>
+        </div>
+      </div>
   </div>
 
-
-
-
+    
 
 
 
@@ -196,6 +275,10 @@
     new WOW().init();
 
   </script>
+  <!-- MDBootstrap Masonry  -->
+  <script type="text/javascript" src="/js/addons/masonry.pkgd.min.js"></script>
+
+  <script type="text/javascript" src="/js/addons/imagesloaded.pkgd.min.js"></script>
 </body>
 
 </html>
